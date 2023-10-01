@@ -1,11 +1,7 @@
 import React from 'react'
-import { useEffect } from "react"
-import { useState } from "react"
-import { useRouter } from 'next/navigation'
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from "../public/assets/logo/64x-black-logo.png"
-import Router from 'next/router'
 
 import {
   DropdownMenu,
@@ -62,7 +58,7 @@ const Navbar = () => {
               <DropdownMenuLabel>My Account</DropdownMenuLabel>
               {
                 LINKS.map((item, idx) => (
-                  <Link href={item.link}>
+                  <Link href={item.link} key={idx}>
                     <DropdownMenuItem >{item.label}</DropdownMenuItem>
                   </Link>
                 ))
