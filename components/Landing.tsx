@@ -5,20 +5,6 @@ import Card from './Card';
 import Profile from './Profile';
 import { Key } from 'lucide-react';
 import VideoPlayer from './Video_player';
-const slideImages = [
-  '/assets/images/4.png',
-  '/assets/images/17.png',
-  '/assets/images/2.png',
-  '/assets/images/18.png',
-  '/assets/images/14.png',
-  '/assets/images/6.png',
-  '/assets/images/10.png',
-  '/assets/images/19.png',
-  '/assets/images/15.png',
-  '/assets/images/20.png',
-  '/assets/images/7.png',
-  '/assets/images/16.png',
-];
 
 interface Event{
     title:string;
@@ -26,8 +12,6 @@ interface Event{
     img:string;
     link:string;
 };
-
-
 const events:Event[] = [
   {
     title:"Matrix v1.0",
@@ -72,7 +56,6 @@ const events:Event[] = [
     link:"/link"
   }
 ]
-
 interface Team{
   name:string;
   batch:string;
@@ -243,80 +226,31 @@ const team22:Team[] = [
     img:"/assets/members/batch23/shubham.png"
   },
 ]
-
-
 const Landing = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide + 1) % slideImages.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <>
-
-      <div className="relative h-fit md:h-[calc(100vh-5rem)]">
-        <div className='z-0'>
-          <div className=''>
-            {slideImages.map((image, index) => (
-              <div
-            key={index}
-            className={`absolute w-full h-fit transform transition-opacity duration-1000 ${
-              index === currentSlide ? 'opacity-100' : 'opacity-0'
-            }`}>
-              <Image src={image} height={2000} width={2000} className='h-max-[300px] brightness-50 md:max-h-[500px] lg:max-h-[680px] w-full object-cover' alt={`Slide ${index + 1}`} />
-            </div>
-          ))}
-          </div>
-        </div> 
-        <div className=' top-50 h-full w-full text-white p-6'>
-          <div className='text-6xl font-bold flex flex-col justify-center text-center items-center gap-5 md:mt-20'>
-            <div className='sm:text-8xl text-3xl z-50'>
-            <div><span className='sm:text-4xl text-4xl '>CH<span className='text-[#f6a339]'>i</span>PSET </span></div>
-          <Typewriter
-            options={{
-              strings: ['Collabration', 'Hackers' , 'Innovators' , "Programmers","Scriptwriters","Enterpreneurs","Technocrats" ],
-              autoStart: true,
-              loop: true,
-              
-            }}
-            />
-            </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-        <div className='page3 bg-neutral-300 w-full p-6 flex flex-col'>
+        <div className='page3 bg-neutral-300 w-full p-1 md:p-6 flex flex-col'>
           <div className='flex flex-col'>
-        <div className='page2  p-6 flex flex-col'>
-          <div className='1 flex text-4xl items-center w-full justify-center'>
-            <h1 className='text-6xl font-bold p-6 '>What are we</h1>
-          </div>
-
-          <div className='flex flex-1 '>
-             <div className='flex flex-1 p-6'>
+        <div className='page2 p-4 flex flex-col'>
+          <div className='flex flex-1 flex-col md:flex-row'>
+             <div className='flex flex-1 md:p-6 '>
                <div className='flex flex-col'>
-                  <p className='text-5xl font-semibold'>What is CH<span className='text-[#f6a339]'>i</span>PSET</p>
-                  <p className='p-6 italic'>Keeping together is PROGRESS. Coming together is a BEGINNING. Working together is SUCCESS.</p>
-                  <p className='p-6 px-12 font-paragraph_font'>CHiPSET is a Collaboration of Hackers, Innovators, Programmers, Script writers, Entrepreuners, and Technocrats. We are a non-profit organization with a zeal for making changes in the world by harvesting talents of unique individuals cross all domains.We believe in building the world by building it’s forever recurring addition; a family of inquisitive minds.</p>
+                  <p className='md:text-4xl font-bold text-xl md:font-semibold'>What is CH<span className='text-[#f6a339]'>i</span>PSET</p>
+                  <p className='p-4 font-thin text-center italic text-sm md:mt-12'>Keeping together is PROGRESS. Coming together is a BEGINNING. Working together is SUCCESS.</p>
+                  <div className='2 md:hidden flex-1 my-6 flex justify-center items-center'>
+                    <VideoPlayer/>
+                  </div>
+                  <p className='font-paragraph_font text-xs md:text-lg lg:text-md md:mt-4'>CHiPSET is a Collaboration of Hackers, Innovators, Programmers, Script writers, Entrepreuners, and Technocrats. We are a non-profit organization with a zeal for making changes in the world by harvesting talents of unique individuals cross all domains.We believe in building the world by building it’s forever recurring addition; a family of inquisitive minds.</p>
                </div>
-             
              </div>
-            <div className='2 flex-1 flex justify-center items-center'>
+            <div className='2 hidden  flex-1 my-6 md:block justify-center items-center'>
               <VideoPlayer/>
             </div>
           </div>
         </div>
-            <h1 className='text-6xl font-bold p-6'>Our Events</h1>
+            <h1 className='md:text-4xl p-4 font-bold text-xl md:font-bold'>Our Events</h1>
           </div>
-          <div className='h-full p-6 grid grid-cols-4 gap-16 '>
+          <div className='flex flex-col h-full md:grid md:grid-cols-2 lg:grid-cols-4 lg:scale-95 py-6 md:gap-16 gap-6 '>
             {
               events.map((event,index)=>(
                 <div key={index} className='flex justify-center w-full'>
@@ -329,12 +263,12 @@ const Landing = () => {
 
 
         <div className='page4 p-6 flex flex-col'>
-          <div className='text-6xl font-bold p-6'>
-            Team
+          <div className=''>
+          <h1 className='md:text-4xl p-4 font-bold text-xl md:font-bold'>Team</h1>
           </div>
           <div className='container_for_team_members'>
-          <div className='flex w-full justify-center'><h1 className='uppercase font-bold text-2xl'>Batch 2024</h1></div>
-          <div className='grid grid-cols-7 p-6'>
+          <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2024</h1></div>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
             {team24.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
@@ -342,8 +276,8 @@ const Landing = () => {
             ))}
           </div>
 
-          <div className='flex w-full justify-center'><h1 className='uppercase font-bold text-2xl'>Batch 2023</h1></div>
-          <div className='grid grid-cols-7 p-6'>
+          <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2023</h1></div>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
             {team23.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
@@ -351,8 +285,8 @@ const Landing = () => {
             ))}
           </div>
 
-          <div className='flex w-full justify-center'><h1 className='uppercase font-bold text-2xl'>Batch 2022</h1></div>
-          <div className='grid grid-cols-7 p-6'>
+          <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2022</h1></div>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
             {team22.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
