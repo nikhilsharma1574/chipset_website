@@ -4,9 +4,10 @@ import Navbar from '@/components/Navbar'
 import Landing from '@/components/Landing'
 import Footer from '@/components/Footer'
 import Test from '@/components/Test'
-
+import { Test1 } from '@/components/Test1'
+import { Gallery } from '@/components/Gallery'
+import { Team } from '@/components/Team'
 const inter = Inter({ subsets: ['latin'] })
-
 export default function Home() {
   return (
     <>
@@ -14,6 +15,8 @@ export default function Home() {
       <Navbar/>
       <Test/>
       <Landing/>
+      <Gallery/>
+      <Team/>
       <Footer/>
     </div>
     </>

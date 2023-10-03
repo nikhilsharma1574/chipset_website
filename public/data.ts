@@ -207,3 +207,12 @@ export const events = [
       link:"/link"
     }
   ]
+export const gallery=[
+  {img:'/assets/gallery/1.jpg'},
+  {img:'/assets/gallery/2.jpg'},
+  {img:'/assets/gallery/3.jpg'},
+  {img:'/assets/gallery/4.jpg'},
+  {img:'/assets/gallery/5.jpg'},
+  {img:'/assets/gallery/6.jpg'},
+  {img:'/assets/gallery/7.jpg'}
+]
