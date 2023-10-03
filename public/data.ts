@@ -63,13 +63,13 @@ export  const team23 = [
     {
       name:"Shairan",
       batch:"2023",
-      img:"/assets/members/batch23/Shairan.png"
+      img:"/assets/members/batch23/shairan.png"
       
     },
     {
       name:"Saideep",
       batch:"2023",
-      img:"/assets/members/batch23/Saideep.png"
+      img:"/assets/members/batch23/saideep.png"
       
     },
     {
@@ -99,13 +99,8 @@ export  const team23 = [
     {
       name:"shikha",
       batch:"2023",
-      img:"/assets/members/batch23/shikhaaaaaa.png"
+      img:"/assets/members/batch23/sheetal.png"
       
-    },
-    {
-      name:"Shubham",
-      batch:"2023",
-      img:"/assets/members/batch23/shubham.png"
     },
   ]
  export const team22= [
@@ -130,13 +125,13 @@ export  const team23 = [
     {
       name:"Anmol",
       batch:"2023",
-      img:"/assets/members/batch22/Anmol.png"
+      img:"/assets/members/batch22/anmol.png"
       
     },
     {
       name:"Ashwin",
       batch:"2023",
-      img:"/assets/members/batch22/Ashwin.png"
+      img:"/assets/members/batch22/ashwin.png"
       
     },
     {
@@ -152,15 +147,9 @@ export  const team23 = [
       
     },
     {
-      name:"Lak",
-      batch:"2023",
-      img:"/assets/members/batch23/shikhaaaaaa.png"
-      
-    },
-    {
       name:"Shubham",
       batch:"2023",
-      img:"/assets/members/batch23/shubham.png"
+      img:"/assets/members/batch22/shubham.png"
     },
   ]
 export const events = [
@@ -215,4 +204,12 @@ export const gallery=[
   {img:'/assets/gallery/5.jpg'},
   {img:'/assets/gallery/6.jpg'},
   {img:'/assets/gallery/7.jpg'}
+]
+export const socialmedia=[
+  {image: '/assets/socials/youtube.png', link :'www.youtube.com'},
+  {image: '/assets/socials/instagram.png', link :'www.instagram.com'},
+  {image: '/assets/socials/linkdln.png', link :'www.linkdln.com'},
+  {image: '/assets/socials/discord.png', link :'www.discord.com'},
+  {image: '/assets/socials/mail.png', link :'www.mail.com'},
+  {image: '/assets/socials/twitter.png', link :'www.twitter.com'},
 ]

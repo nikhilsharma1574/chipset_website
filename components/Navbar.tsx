@@ -41,7 +41,7 @@ const Navbar = () => {
   
   return (
     <div>
-      <nav className ="backdrop-blur-sm z-50  md:w-full transition-all delay-10 bg-white h-[4rem]  sm:h-[7rem] md:h-[7rem] px-4">
+      <nav className ="backdrop-blur-sm z-50  md:w-full transition-all delay-10 h-[4rem]  sm:h-[7rem] md:h-[7rem] px-4">
         <div className ="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto h-full ">
           <div className='flex items-center'>
             <Link href="./" className="flex items-center ">

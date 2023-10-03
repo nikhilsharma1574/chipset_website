@@ -11,7 +11,7 @@ export const Gallery = () => {
       <div className="w-1/2 p-1 md:p-2">
         <Image
           alt="gallery"
-          className="block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
+          className="hover:brightness-50 transition-all delay-100 cursor-pointer block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
           height={500}
           width={500}
           src="/assets/gallery/1.png" />
@@ -19,7 +19,7 @@ export const Gallery = () => {
       <div className="w-1/2 p-1 md:p-2">
         <Image
           alt="gallery"
-          className="block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
+          className="hover:brightness-50 transition-all delay-100 cursor-pointer block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
           height={500}
           width={500}
           src="/assets/gallery/2.png" />
@@ -27,7 +27,7 @@ export const Gallery = () => {
       <div className="w-full p-1 md:p-2">
         <Image
           alt="gallery"
-          className="block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
+          className="hover:brightness-50 transition-all delay-100 cursor-pointer block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
           height={500}
           width={500}
           src="/assets/gallery/3.png" />
@@ -37,7 +37,7 @@ export const Gallery = () => {
       <div className="w-full p-1 md:p-2">
         <Image
           alt="gallery"
-          className="block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
+          className="hover:brightness-50 transition-all delay-100 cursor-pointer block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
           height={500}
           width={500}
           src="/assets/gallery/4.png" />
@@ -45,7 +45,7 @@ export const Gallery = () => {
       <div className="w-1/2 p-1 md:p-2">
         <Image
           alt="gallery"
-          className="block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
+          className="hover:brightness-50 transition-all delay-100 cursor-pointer block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
           height={500}
           width={500}
           src="/assets/gallery/5.png" />
@@ -53,7 +53,7 @@ export const Gallery = () => {
       <div className="w-1/2 p-1 md:p-2">
         <Image
           alt="gallery"
-          className="block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
+          className="hover:brightness-50 transition-all delay-100 cursor-pointer block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
           height={500}
           width={500}
           src="/assets/gallery/7.png" />
