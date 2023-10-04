@@ -9,7 +9,6 @@
           <div className='w-full p-1 md:p-6 flex flex-col'>
             <div className='flex flex-col'>
           <div className='page2 p-4 flex flex-col'>
-            
             <div className='flex flex-1 flex-col md:flex-row'>
               <div className='flex flex-1 md:p-6 '>
                 <div className='flex flex-col'>

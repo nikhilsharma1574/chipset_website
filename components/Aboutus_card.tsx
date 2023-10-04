@@ -9,7 +9,7 @@ interface aboutus{
 const aboutus_card:React.FC<aboutus> = ({position,heading,desc,image}) => {
   return (
     <div>
-      <div className={`flex rounded-[9px] my-4 flex-col md:flex-row md:p-6 p-2 ${position}`}>
+      <div className={`flex rounded-[9px] my-4 flex-col md:p-6 p-2 ${position}`}>
                   <div className='flex flex-1 justify-center'>
                     <Image src={image} height={500} width={500} alt='image' className='w-full h-full rounded-[9px]'/>
                   </div>
