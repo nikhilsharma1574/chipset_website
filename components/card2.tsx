@@ -7,7 +7,7 @@ interface Socials{
   title:string;
 }
 
-const card2:React.FC<Socials> = ({ image, link,title}) => {
+const Card2:React.FC<Socials> = ({ image, link,title}) => {
   return (
     <>
     <Link href={link}>
@@ -29,4 +29,4 @@ const card2:React.FC<Socials> = ({ image, link,title}) => {
   )
 }
 
-export default card2
+export default Card2
