@@ -9,6 +9,7 @@ import { Gallery } from '@/components/Gallery'
 import { Team } from '@/components/Team'
 import Socialmedia from '@/components/Socialmedia'
 import Head from 'next/head'
+import PageLayout from '@/layouts/PageLayout'
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
@@ -18,13 +19,12 @@ export default function Home() {
       <link rel="shortcut icon" href="/assets/logo/64x_white_logo.png" />
     </Head>
     <div className='max-w-screen overflow-hidden'>
-      <Navbar/>
-      <Test/>
-      <Landing/>
-      <Gallery/>
-      <Socialmedia/>
-      {/* <Team/> */}
-      <Footer/>
+      <PageLayout>
+        <Test/>
+        <Landing/>
+        <Gallery/>
+        <Socialmedia/>
+      </PageLayout>
     </div>
     </>
         

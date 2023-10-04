@@ -1,13 +1,16 @@
 import React from 'react'
 import Image from 'next/image';
+import Link from 'next/link';
 interface Socials{
   image:string;
   link:string;
+  title:string;
 }
 
-const card2:React.FC<Socials> = ({ image, link}) => {
+const card2:React.FC<Socials> = ({ image, link,title}) => {
   return (
-    <div>
+    <>
+    <Link href={link}>
         <div className='hover:scale-110 transition-all delay-100 cursor-pointer'>
         <div
       className="block max-w-[18rem] w-[200px] md:w-[220px]  rounded-[9px] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
@@ -16,12 +19,13 @@ const card2:React.FC<Socials> = ({ image, link}) => {
       </div>
       <div className="p-6">
         <p className="text-base flex justify-center text-neutral-600 dark:text-neutral-200 line-clamp-4">
-        {link}
+        {title}
         </p>
       </div>
     </div>
         </div>
-    </div>
+    </Link>
+        </>
   )
 }
 
