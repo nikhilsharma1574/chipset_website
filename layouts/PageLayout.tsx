@@ -4,7 +4,7 @@ import React from 'react'
 
 const PageLayout = ({children}:any) => {
   return (
-    <div>
+    <div className=' w-full h-full scrollbar scrollbar-thumb-orange-700 scrollbar-track-red-600'>
         <Navbar/>
         {children}
         <Footer/>
