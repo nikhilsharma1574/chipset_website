@@ -73,7 +73,7 @@ const Navbar = () => {
           </DropdownMenu> */}
 
             <Sheet>
-              <SheetTrigger className='md:hidden'><Menu></Menu></SheetTrigger>
+              <SheetTrigger><Menu></Menu></SheetTrigger>
               <SheetContent>
                 <SheetHeader>
                   <SheetTitle>Menu</SheetTitle>

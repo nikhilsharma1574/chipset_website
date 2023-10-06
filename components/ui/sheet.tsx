@@ -12,10 +12,9 @@ const SheetTrigger = SheetPrimitive.Trigger
 const SheetClose = SheetPrimitive.Close
 
 const SheetPortal = ({
-  className,
-  ...props
+    ...props
 }: SheetPrimitive.DialogPortalProps) => (
-  <SheetPrimitive.Portal className={cn(className)} {...props} />
+  <SheetPrimitive.Portal {...props} />
 )
 SheetPortal.displayName = SheetPrimitive.Portal.displayName
 
