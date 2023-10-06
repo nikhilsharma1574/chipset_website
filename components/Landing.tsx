@@ -18,7 +18,7 @@ interface Team{
 const Landing = () => {
   return (
     <>
-        <div className='page3 bg-neutral-300 w-full p-1 md:p-6 flex flex-col'>
+        <div className='page3 w-full p-1 md:p-6 flex flex-col'>
           <div className='flex flex-col'>
         <div className='page2 p-4 flex flex-col'>
           <div className='flex flex-1 flex-col md:flex-row'>
