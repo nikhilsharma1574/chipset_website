@@ -9,9 +9,10 @@ export default function App({ Component, pageProps }: AppProps) {
     AOS.init({
       easing: "ease-out-cubic",
       once: true,
-      offset: 50,
+      offset: 5,
+      duration:1200
     });
   }, []);
-  
+
   return <Component {...pageProps} />
 }

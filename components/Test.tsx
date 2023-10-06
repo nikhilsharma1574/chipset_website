@@ -33,7 +33,7 @@ const Test = () => {
     <Suspense fallback={<Loading/>}>
     <div data-aos="fade-up" className='w-screen flex items-center justify-center p-0 m-0 overflow-hidden'>
       <div
-        className='w-full h-[40vh] md:h-[60vh] lg:h-[80vh]  bg-cover bg-no-repeat bg-center brightness-50'
+        className='w-full h-[40vh] md:h-[60vh] lg:h-[80vh] transition-all bg-cover bg-no-repeat bg-center brightness-50'
         style={{
           backgroundImage: `url(${slideImages[currentImageIndex]})`,
           objectFit: 'cover',

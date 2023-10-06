@@ -13,6 +13,15 @@ import {
 } from "@/components/ui/dropdown-menu"
 import { Button } from "@/components/ui/button"
 import { Menu } from 'lucide-react'
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+
 
 const Navbar = () => {
 
@@ -48,7 +57,8 @@ const Navbar = () => {
               <p className='font-semibold uppercase sm:text-xs text-[10px] text-[#f6a339]'>A Technical Club</p>
             </div>
             </div>
-          <DropdownMenu>
+
+          {/* <DropdownMenu>
             <DropdownMenuTrigger className='md:hidden'><Button><Menu></Menu></Button></DropdownMenuTrigger>
             <DropdownMenuContent className='p-4 rounded-[9px] hover:text=[#f6a339] bg-slate-300 m-4'>
               <DropdownMenuLabel >Menu</DropdownMenuLabel>
@@ -60,7 +70,30 @@ const Navbar = () => {
                 ))
               }
             </DropdownMenuContent>
-          </DropdownMenu>
+          </DropdownMenu> */}
+
+            <Sheet>
+              <SheetTrigger className='md:hidden'><Menu></Menu></SheetTrigger>
+              <SheetContent>
+                <SheetHeader>
+                  <SheetTitle>Menu</SheetTitle>
+                  <SheetDescription>
+                    {
+                      LINKS.map((item, idx) => (
+                        <Link href={item.link} key={idx}>
+                          <ul className='w-full h-full m-2'>
+                            <li>
+                              {item.label}
+                            </li>
+                          </ul>
+                        </Link>
+                      ))
+                    }
+                  </SheetDescription>
+                </SheetHeader>
+              </SheetContent>
+            </Sheet>
+
           <div className ="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               {
