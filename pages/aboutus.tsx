@@ -28,7 +28,7 @@
             </div>
             {
               aboutusdata.map((about,index)=>(
-              <div key={index}>
+              <div key={index} data-aos="slide-up">
                 <Aboutus_card {...about}/>
               </div>  
               ))}

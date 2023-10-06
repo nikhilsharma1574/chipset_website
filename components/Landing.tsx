@@ -31,7 +31,7 @@ const Landing = () => {
                       <VideoPlayer/>  
                     </div>
                   </div>
-                  <p data-aos="fade-up" className='font-paragraph_font text-xs md:text-lg lg:text-md md:mt-4'>CHiPSET is a Collaboration of Hackers, Innovators, Programmers, Script writers, Entrepreuners, and Technocrats. We are a non-profit organization with a zeal for making changes in the world by harvesting talents of unique individuals cross all domains.We believe in building the world by building it’s forever recurring addition; a family of inquisitive minds.</p>
+                  <p data-aos="fade-up" className='font-paragraph_font text-xs md:text-md lg:text-[15px] lg:text-md md:mt-4'>CHiPSET is a Collaboration of Hackers, Innovators, Programmers, Script writers, Entrepreuners, and Technocrats. We are a non-profit organization with a zeal for making changes in the world by harvesting talents of unique individuals cross all domains.We believe in building the world by building it’s forever recurring addition; a family of inquisitive minds.</p>
                </div>
              </div>
             <div data-aos="fade-left" className='2 hidden  flex-1 my-6 md:block justify-center items-center'>
