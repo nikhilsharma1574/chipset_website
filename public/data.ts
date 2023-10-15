@@ -19,7 +19,7 @@ export const team24 = [
     },
     {
       name:"inas",
-      batch:"2023",
+      batch:"2024",
       img:"/assets/members/batch24/inas.png"
       
     },
@@ -37,19 +37,19 @@ export const team24 = [
     },
     {
       name:"Aman",
-      batch:"2023",
+      batch:"2024",
       img:"/assets/members/batch24/aman.png"
       
     },
     {
       name:"Atharv",
-      batch:"2023",
+      batch:"2024",
       img:"/assets/members/batch24/atharv.png"
       
     },
     {
       name:"Shubham",
-      batch:"2023",
+      batch:"2024",
       img:"/assets/members/batch24/shubham.png"
     },
   ]
@@ -106,54 +106,60 @@ export  const team23 = [
  export const team22= [
     {
       name:"Aaishwarya",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/aaishwarya.png"
       
     },
     {
       name:"adarsh",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/adarsh.png"
       
     },
     {
       name:"Ananya",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/ananyaa.png"
       
     },
     {
       name:"Anmol",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/anmol.png"
       
     },
     {
       name:"Ashwin",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/ashwin.png"
       
     },
     {
       name:"Aviral",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/aviral.png"
       
     },
     {
       name:"Joydeep",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/joydeep.png"
       
     },
     {
       name:"Shubham",
-      batch:"2023",
+      batch:"2022",
       img:"/assets/members/batch22/shubham.png"
     },
   ]
 export const events = [
-    {
+   {
+    title:"TechXchange",
+    desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
+    img:"/assets/images/21.png",
+    link:"/link"
+   }, 
+   {
       title:"Matrix v1.0",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/14.png",
@@ -214,8 +220,8 @@ export const socialmedia=[
   {title:"Discord" ,image: '/assets/socials/discord.png', link :'www.discord.com'},
 ]
 export const aboutusdata=[
-  {position:'md:flex-row-reverse',heading:'Our Motive',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/4.png"},
-  {position:'md:flex-row',heading:'Our Values',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/3.png"},
-  {position:'md:flex-row-reverse',heading:'Our Vision',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/2.png"},
-  {position:'md:flex-row',heading:'Our Values',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/1.png"},
+  {position:'flex-row',heading:'Our Motive',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/4.png"},
+  {position:'flex-row-reverse',heading:'Our Values',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/3.png"},
+  {position:'flex-row',heading:'Our Vision',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/2.png"},
+  {position:'flex-row-reverse',heading:'Our Values',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/1.png"},
 ]

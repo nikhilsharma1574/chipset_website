@@ -3,6 +3,8 @@
   import VideoPlayer from '@/components/Video_player';
   import { aboutusdata } from '@/public/data';
   import Aboutus_card from '@/components/Aboutus_card';
+  import Timeline from '@/components/Timeline';
+
   const aboutus = () => {
     return (
       <PageLayout>
@@ -25,6 +27,9 @@
               </div>
               <div>
               </div>
+            </div>
+            <div data-aos="slide-up" className='flex flex-1 w-full justify-center'>
+              <Timeline/>
             </div>
             {
               aboutusdata.map((about,index)=>(

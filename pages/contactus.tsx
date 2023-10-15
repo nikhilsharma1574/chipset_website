@@ -1,41 +1,84 @@
+import Socialmedia from '@/components/Socialmedia'
 import PageLayout from '@/layouts/PageLayout'
+import mail from '@sendgrid/mail'
 import React from 'react'
+import { useState } from 'react'
 
 const Contact = () => {
-  return (
-    <PageLayout>
-    <div>
-        <div className='page5 Gallery h-screen md:p-6 flex flex-col'>
-          <div className='w-full flex justify-center items-center'>
-          <div className='md:p-6 md:w-1/2 w-full p-12'>
-   <h5 id="drawer-label" className="inline-flex justify-center items-center mb-6 text-[12px] font-semibold text-gray-500 uppercase dark:text-gray-400"><svg className="w-4 h-4 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
-    <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
-    <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
-  </svg>Contact us</h5>
-   <form action="#" className="mb-6">
-      <div className="mb-6">
-         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SRM Mail</label>
-         <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="xxxxxx@srmist.edu.in" required/>
-      </div>
-      <div className="mb-6">
-         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
-         <input type="text" id="subject" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Let us know how we can help you" required/>
-      </div>
-      <div className="mb-6">
-         <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
-         <textarea id="message" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></textarea>
-      </div>
-      <button type="submit" className="text-black bg-[#f6a339] hover:bg-[#aa732b] w-full focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 rounded-[9px] block">Send message</button>
-   </form>
-   <p className="mb-2 text-sm text-gray-500 dark:text-gray-400 justify-center flex-1 flex">
-      <a href="#" className="hover:underline">chipsetrmp@gmail.com</a>
-   </p>
-          </div>
+  const [values,setValues]=useState({
+    name:"",
+    email:"",
+    message:""
+  });
+  const {name,email,message}=values
+  
+  const handleChange = (e:any) => 
+    setValues({...values , [e.target.name]: e.target.value});
+  
+    const handleSubmit = async (e:any) => {
+      console.log("Hello")
+      e.preventDefault();
+      try {
+        await fetch("http://localhost:3000/contactus", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+      } catch (err) {
+        console.error(err);
+      }
+    };
+
+return (
+  <PageLayout>
+  <div>
+      <div className='page5 Gallery md:px-6 flex flex-col'>
+        <div className='w-full flex justify-center items-center'>
+        <div className='md:px-6 md:w-1/2 w-full px-12'>
+           <h5 id="drawer-label" className="inline-flex justify-center items-center mb-6 text-[12px] font-semibold text-gray-500 uppercase dark:text-gray-400"><svg className="w-4 h-4 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 16">
+            <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
+            <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
+          </svg>Contact us</h5>
+           <form action="#" className="mb-6" onSubmit={handleSubmit}>
+              <div className="mb-6">
+                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
+                 <input onChange={handleChange} value={values.name}  type="name" id="name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Name" required/>
+              </div>
+              <div className="mb-6">
+                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">SRM mail</label>
+                 <input onChange={handleChange} value={values.email} type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-1 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="xxxxxx@srmist.edu.in" required/>
+              </div>
+              <div className="mb-6">
+                 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your message</label>
+                 <input onChange={handleChange} value={values.message} id="message" className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your message..."></input>
+              </div>
+              <button type="submit" className="text-black bg-[#f6a339] hover:bg-[#aa732b] w-full focus:ring-4 focus:ring-blue-300 font-medium text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 rounded-[9px] block">Send message</button>
+           </form>
+           <p className="mb-2 text-sm text-gray-500 dark:text-gray-400 justify-center flex-1 flex">
+              <a href="#" className="hover:underline">chipsetrmp@gmail.com</a>
+           </p>
         </div>
-        </div>
-    </div>
-    </PageLayout>
-  )
+      </div>
+      </div>
+  <Socialmedia/>
+  </div>
+  <div className='flex flex-1 flex-col justify-center p-4'>
+    <h1 className='md:text-4xl p-4 font-bold text-xl md:font-bold'>Reach us at</h1>
+    <iframe
+    className='p-6 w-full rounded-[9px]'
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1189.0837635721973!2d80.17986054201832!3d13.032625689820724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5266d11f9ca625%3A0xf77d1733be7b5b74!2sSRM%20Institute%20Of%20Science%20And%20Technology!5e0!3m2!1sen!2sin!4v1697312327215!5m2!1sen!2sin"
+      width="800"
+      height="600"
+      style={{ border: 0 }}
+      allowFullScreen={true}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  </PageLayout>
+)
 }
 
 export default Contact

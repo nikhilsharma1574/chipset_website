@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export const Gallery = () => {
   return (
-    <div className='w-full h-full bg-slate-100 p-1 md:p-4 xl:p-2'>
-      <h1 className='md:text-4xl p-4 font-bold text-xl md:font-bold'>Gallery</h1>
-      <div className="container mx-auto px-5 py-1 lg:px-12 lg:pt-12">
-  <div className="-m-1 flex flex-wrap md:-m-2">
-    <div data-aos="fade-down" className="flex w-1/2 flex-wrap">
-      <div data-aos="fade-down" className="w-1/2 p-1 md:p-2">
+    <div className='w-full h-full p-1 md:p-4 xl:p-2 '>
+      <h1 className='md:text-4xl  p-4 font-bold text-xl md:font-bold'>Gallery</h1>
+      <div className="container mx-auto px-5  py-1 lg:px-12 lg:pt-12">
+  <div className="-m-1 flex flex-wrap md:-m-2  flex-col md:flex-row">
+    <div data-aos="fade-down" className="flex md:w-1/2 flex-wrap ">
+      <div data-aos="fade-down" className="w-1/2 p-1 md:p-2 ">
         <Image
           alt="gallery"
           className="hover:brightness-50 transition-all delay-100 cursor-pointer block h-full w-full rounded-[5px] md:rounded-xl object-cover object-center"
@@ -33,7 +33,7 @@ export const Gallery = () => {
           src="/assets/gallery/3.png" />
       </div>
     </div>
-    <div className="flex w-1/2 flex-wrap">
+    <div className="flex md:w-1/2 flex-wrap ">
       <div data-aos="fade-down" className="w-full p-1 md:p-2">
         <Image
           alt="gallery"

@@ -11,7 +11,7 @@ interface Event {
 
 const Card: React.FC<Event> = ({ title, desc, img}) => {
   return (
-    <div className="h-[20rem] md:h-[22rem] lg:h-[22rem] w-[15rem] shadow-md hover:scale-105 transition-all delay-100 bg-[#E4E4D0] border border-gray-200 rounded-[9px] dark:bg-gray-800 dark:border-gray-700 ">
+    <div className="h-[20rem] md:h-[22rem] lg:h-[22rem] w-full md:m-0 m-4 md:w-[15rem] shadow-md hover:scale-105 transition-all delay-100 bg-[#eeeeee] border border-gray-200 rounded-[9px] dark:bg-gray-800 dark:border-gray-700 ">
       <a href="#">
         <Image className="rounded-[9px] w-full h-1/2  object-cover" src={img} height={1000} width={1000} alt="" />
       </a>
