@@ -40,8 +40,8 @@ const Test = () => {
         }}
         >
         <div className='text-container text-white text-4xl font-bold z-10 '>
-          <div className='w-full h-[40vh] md:h-[60vh] lg:h-[80vh] bg-black md:flex flex-1 first-letter:text-6xl font-bold flex flex-col justify-center text-center items-center bg-opacity-60'>
-            <div className='text-4xl sm:text-6xl'>
+          <div className='w-full h-[40vh] md:h-[60vh] lg:h-[80vh] bg-black md:flex flex-1 first-letter:text-6xl font-bold flex flex-col justify-center text-center items-center bg-opacity-40'>
+            <div className='md:text-8xl text-[#f6a339] sm:text-6xl'>
               CH<span className='text-highlight'>i</span>PSET{' '}
             </div>
             <div className='text-left mt-4 text-xl'>
