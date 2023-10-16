@@ -14,7 +14,7 @@
             <div className='flex flex-1 flex-col md:flex-row'>
               <div className='flex flex-1 md:p-6 '>
                 <div className='flex flex-col'>
-                    <p className='md:text-4xl font-bold text-xl md:font-semibold'>What is CH<span className='text-[#f6a339]'>i</span>PSET</p>
+                    <p className='md:text-4xl font-extrabold text-xl md:font-semibold'>What is CH<span className='text-[#f6a339]'>i</span>PSET</p>
                     <p className='p-4 font-thin text-center italic text-sm md:mt-12'>Keeping together is PROGRESS. Coming together is a BEGINNING. Working together is SUCCESS.</p>
                     <div className='2 md:hidden flex-1 my-6 flex justify-center items-center'>
                       <VideoPlayer/>

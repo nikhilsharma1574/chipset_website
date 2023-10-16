@@ -53,20 +53,20 @@ const Navbar = () => {
                 <Image src={logo} height={100} width={100} alt='Logo' className='w-10 sm:w-20 md:w-16 p-1'/>
               <div>
                 <p className='font-bold text-2xl sm:text-4xl'>CHiPSET</p>
-                <p className='font-semibold uppercase sm:text-xs text-[10px] text-[#f6a339]'>A Technical Club</p>
+                <p className='font-semibold uppercase sm:text-xs text-[10px] text-[#ff5234]'>A Technical Club</p>
               </div>
               </div>
           </Link>
             <Sheet>
               <SheetTrigger className='md:hidden'><Menu></Menu></SheetTrigger>
-              <SheetContent>
-                <SheetHeader>
+              <SheetContent className=''>
+                <SheetHeader className=''>
                   <SheetTitle>Menu</SheetTitle>
-                  <SheetDescription>
+                  <SheetDescription className='w-full h-full'>
                     {
                       LINKS.map((item, idx) => (
                         <Link href={item.link} key={idx}>
-                          <ul className='w-full h-full m-2'>
+                          <ul className='font-semibold uppercase sm:text-xs text-[12px] text-[#ff5234] my-4'>
                             <li>
                               {item.label}
                             </li>
@@ -84,38 +84,12 @@ const Navbar = () => {
               {
                 LINKS.map((item, idx) => (
                   <div className='' key={idx}>
-                  <Link href={item.link} key={idx} className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#f6a339] md:p-0 dark:text-white md:dark:hover:text-[#f6a339] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'>
+                  <Link href={item.link} key={idx} className='block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#ff5234] md:p-0 dark:text-white md:dark:hover:text-[#ff5234] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent'>
                       {item.label}
                   </Link>
                   </div>
                 ))
               }              
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-              {/* <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#f6a339] md:p-0 dark:text-white md:dark:hover:text-[#f6a339] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Events</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#f6a339] md:p-0 dark:text-white md:dark:hover:text-[#f6a339] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About us</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#f6a339] md:p-0 dark:text-white md:dark:hover:text-[#f6a339] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Team</a>
-              </li>
-              <li>
-                <a href="#" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#f6a339] md:p-0 dark:text-white md:dark:hover:text-[#f6a339] dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-              </li> */}
             </ul>
           </div>
         </div>

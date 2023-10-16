@@ -225,3 +225,23 @@ export const aboutusdata=[
   {position:'flex-row',heading:'Our Vision',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/2.png"},
   {position:'flex-row-reverse',heading:'Our Values',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/1.png"},
 ]
+export const marqueeimage=[
+  {
+    img_link:'/assets/images/1.png'
+  },
+  {
+    img_link:'/assets/images/2.png'
+  },
+  {
+    img_link:'/assets/images/3.png'
+  },
+  {
+    img_link:'/assets/images/4.png'
+  },
+  {
+    img_link:'/assets/images/5.png'
+  },
+  {
+    img_link:'/assets/images/6.png'
+  },
+]

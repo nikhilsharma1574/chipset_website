@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export const Gallery = () => {
   return (
-    <div className='w-full h-full p-1 md:p-4 xl:p-2 '>
+    <div className='w-full h-full p-1 md:p-4 xl:p-2'>
       <h1 className='md:text-4xl  p-4 font-bold text-xl md:font-bold'>Gallery</h1>
       <div className="container mx-auto px-5  py-1 lg:px-12 lg:pt-12">
   <div className="-m-1 flex flex-wrap md:-m-2  flex-col md:flex-row">
