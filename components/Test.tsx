@@ -1,8 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import Typewriter from 'typewriter-effect';
-import Marquee from "react-fast-marquee";
 import Loading from '@/Loading';
-import Marqueescroll from './Marqueescroll';
 const slideImages = [
   '/assets/images/4.png',
   '/assets/images/17.png',

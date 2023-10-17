@@ -1,7 +1,17 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button } from "@/components/ui/button";
-
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 interface Event {
   title: string;
   desc: string;
@@ -22,7 +32,23 @@ const Card: React.FC<Event> = ({ title, desc, img}) => {
         </a>
         <p className="font-normal text-xs text-gray-700 line-clamp-3 h-fit">{desc}</p>
         </div>
-        <Button className='bg-[#f6a339] hover:bg-[#ab7837] text-sm rounded-[7px] mt-4'>Read more</Button>
+        {/* <Button className='bg-[#f6a339] hover:bg-[#ab7837] text-sm rounded-[7px] mt-4'>Read more</Button> */}
+        <div className='text-black'>
+        <AlertDialog>
+          <AlertDialogTrigger className='bg-[#f6a339] hover:bg-[#ab7837] px-6 py-2 text-sm rounded-[7px] mt-4'>Read more</AlertDialogTrigger>
+          <AlertDialogContent className='m-4'>
+            <AlertDialogHeader>
+              <AlertDialogTitle className='uppercase'>{title}</AlertDialogTitle>
+              <AlertDialogDescription className='text-[10px] md:text-[15px]'>
+                {desc}
+              </AlertDialogDescription>
+            </AlertDialogHeader>
+            <AlertDialogFooter>
+              <AlertDialogCancel>Close</AlertDialogCancel>
+            </AlertDialogFooter>
+          </AlertDialogContent>
+        </AlertDialog>
+    </div>
       </div>
     </div>
   );
