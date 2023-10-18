@@ -107,7 +107,7 @@ export  const team23 = [
     {
       name:"Aaishwarya",
       batch:"2022",
-      img:"/assets/members/batch22/aaishwarya.png"
+      img:"/assets/members/batch22/aishwarya.png"
       
     },
     {
