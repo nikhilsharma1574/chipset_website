@@ -9,6 +9,8 @@ interface Event{
     desc:string;
     img:string;
     link:string;
+    date:string;
+    registrations:string;
 };
 interface Team{
   name:string;

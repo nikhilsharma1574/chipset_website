@@ -6,7 +6,7 @@ import Socialmedia from '@/components/Socialmedia'
 import Head from 'next/head'
 import PageLayout from '@/layouts/PageLayout'
 import { motion as m } from 'framer-motion'
-// import Marqueescroll from '@/components/Marqueescroll'
+import Marqueescroll from '@/components/Marqueescroll'
 import Popup from '@/components/ui/Popup'
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
@@ -20,9 +20,8 @@ export default function Home() {
       <PageLayout>
         <Test/>
         <Landing/>
-        {/* <Marqueescroll/> */}
+        <Marqueescroll/>
         <Gallery/>
-        {/* <Popup/> */}
       </PageLayout>
     </m.div>
     </>

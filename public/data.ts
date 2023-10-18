@@ -157,49 +157,65 @@ export const events = [
     title:"TechXchange",
     desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
     img:"/assets/images/21.png",
-    link:"/link"
+    link:"/link",
+    date:"12/01/2020",
+    registrations:"120"
    }, 
    {
       title:"Matrix v1.0",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/14.png",
-      link:"/link"
+      link:"/link",
+      date:"12/01/2020",
+      registrations:"120"
     },
     {
       title:"Hello Hacker V7.0",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/15.png",
-      link:"/link"
+      link:"/link",
+      date:"12/01/2020",
+      registrations:"120"
     },
     {
       title:"Codethon",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/12.png",
-      link:"/link"
+      link:"/link",
+      date:"12/01/2020",
+      registrations:"120"
     },
     {
       title:"Nodecon",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/11.png",
-      link:"/link"
+      link:"/link",
+      date:"12/01/2020",
+      registrations:"120"
     },
     {
       title:"Codethon",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/10.png",
-      link:"/link"
+      link:"/link",
+      date:"12/01/2020",
+      registrations:"120"
     },
     {
       title:"Pixomania",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/9.png",
-      link:"/link"
+      link:"/link",
+      date:"12/01/2020",
+      registrations:"120"
     },
     {
       title:"Adroit",
       desc:"With this post, Matrix v1.0 officially comes to an end. Thankyou for attending the event. We were overwhelmed by your responses! Hope to see you all soon!🫡🤩Follow our social media handles for more updates on the upcoming events!✨📱",
       img:"/assets/images/7.png",
-      link:"/link"
+      link:"/link",
+      date:"12/01/2020",
+      registrations:"120"
     }
   ]
 export const gallery=[

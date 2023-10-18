@@ -24,9 +24,12 @@ const Footer = () => {
                     </ul>
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                
-                <span className="block text-sm  justify-center text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" className="hover:underline">CHiPSET</a>. All Rights Reserved.</span>
-                <span className="block text-sm  justify-center text-gray-500 sm:text-center dark:text-gray-400">Developer - Nikhil Sharma <Link className='hover:underline font-bold' href="https://www.linkedin.com/in/nikhilshaarrma/"> Contact </Link></span>
+                <div className='flex flex-1 justify-center'>
+                  <div>
+                    <span className="block text-[9px] md:text-[12px] justify-center text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" className="hover:underline">CHiPSET</a>. All Rights Reserved.</span>
+                    <span className="block text-[9px] md:text-[12px] justify-center text-gray-500 sm:text-center dark:text-gray-400">Developer - Nikhil Sharma <Link className='hover:underline font-bold' href="https://www.linkedin.com/in/nikhilshaarrma/"> Contact </Link></span>
+                  </div>
+                </div>
             </div>
         </footer>
     </div>
