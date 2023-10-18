@@ -2,12 +2,26 @@ import Socialmedia from '@/components/Socialmedia'
 import PageLayout from '@/layouts/PageLayout'
 import React from 'react'
 import { useState } from 'react'
-
+import Image from 'next/image'
 const Contact = () => {
 
 return (
   <PageLayout>
-  <div>
+  <div className='page4 p-6 flex flex-col'>
+  <div className='flex flex-1 flex-col md:flex-row'>
+            <div className='flex flex-1 md:p-6 '>
+              <div className='flex flex-col'>
+                  <p className='md:text-4xl font-extrabold text-xl md:font-semibold'>Contact us</p>
+                  <div className='2 md:hidden flex-1 my-6 flex justify-center items-center'>
+                  <Image src={'/assets/svgs/contact_us.svg'} className='h-fit' height={200} width={200} alt='image'/> 
+                  </div>
+                  <p className='font-paragraph_font text-xs md:text-lg my-6 lg:text-md md:mt-4'>CHiPSET is a Collaboration of Hackers, Innovators, Programmers, Script writers, Entrepreuners, and Technocrats. We are a non-profit organization with a zeal for making changes in the world by harvesting talents of unique individuals cross all domains.We believe in building the world by building it’s forever recurring addition; a family of inquisitive minds.</p>
+              </div>
+            </div>
+            <div className='2 hidden  flex-1 my-6 md:flex justify-center items-center'>
+                <Image src={'/assets/svgs/contact_us.svg'} className='h-fit' height={600} width={600} alt='image'/> 
+            </div>
+          </div>
       <div className='page5 Gallery md:px-6 flex flex-col'>
         <div className='w-full flex justify-center items-center'>
         <div className='md:px-6 md:w-1/2 w-full px-12'>

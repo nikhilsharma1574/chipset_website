@@ -2,7 +2,7 @@ import React from 'react'
 
 const Timeline = () => {
   return (
-    <div className='p-12'>
+    <div className='lg:p-12 md:p-6 mt-12'>
         <ol className="relative border-l border-gray-200 dark:border-gray-700">                  
             <li className="mb-10 ml-6">            
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-yellow-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-yellow-900">
@@ -12,7 +12,7 @@ const Timeline = () => {
                 </span>
                 <h3 className=" flex items-center mb-1 text-sm font-semibold text-gray-900 dark:text-white">CHiPSET, Established in 2016</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Oldest technical club of SRM Ramapuram</time>
-                <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Startes for technical events and creating diverse enviroment for developers.</p>
+                <p className="text-xs font-normal text-gray-500 dark:text-gray-400 mb-4 ">Startes for technical events and creating diverse enviroment for developers.</p>
             </li>
             <li className="mb-10 ml-6">
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-yellow-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-yellow-900">
@@ -22,7 +22,7 @@ const Timeline = () => {
                 </span>
                 <h3 className=" mb-1 text-sm font-semibold text-gray-900 dark:text-white">Conducted Technical events</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Hello hackers more than 900+ registrations</time>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">biggest event in history of SRM ramapuram.</p>
+                <p className="text-xs font-normal text-gray-500 dark:text-gray-400">biggest event in history of SRM ramapuram.</p>
             </li>
             <li className="ml-6">
                 <span className="absolute flex items-center justify-center w-6 h-6 bg-yellow-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-yellow-900">
@@ -32,7 +32,7 @@ const Timeline = () => {
                 </span>
                 <h3 className=" mb-1 text-sm font-semibold text-gray-900 dark:text-white">Only technical club got chance to conduct TEXUS in 2021</h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Texux is National level fest of SRM Ramapuram</time>
-                <p className="text-base font-normal text-gray-500 dark:text-gray-400">CHiPSET did it.</p>
+                <p className="text-xs font-normal text-gray-500 dark:text-gray-400">CHiPSET did it.</p>
             </li>
         </ol>
 

@@ -3,6 +3,7 @@ import React from 'react'
 const Contact = () => {
   return (
     <div>
+      
         <div className='page5 Gallery h-screen p-6 flex flex-col'>
           <div className='text-6xl font-bold p-6 flex justify-center items-center'>
             Contact us
