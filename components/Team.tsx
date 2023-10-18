@@ -1,5 +1,5 @@
 import React from 'react'
-import { team24,team23,team22,events } from '@/public/data';
+import { team24,team23,team22,team21,team20,team25 } from '@/public/data';
 import Profile from './Profile';
 import Image from 'next/image';
 
@@ -21,6 +21,15 @@ export const Team = () => {
             </div>
           </div>
           <div className='container_for_team_members'>
+          
+          <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2025</h1></div>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+            {team25.map((team,index)=>(
+              <div key={index} className='flex justify-center'>
+                <Profile {...team} />
+              </div>
+            ))}
+          </div>
           <div className='flex w-full justify-center'><h1 className='md:mt-12 uppercase font-bold md:text-2xl text-xl'>Batch 2024</h1></div>
           <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
             {team24.map((team,index)=>(
@@ -40,6 +49,24 @@ export const Team = () => {
           <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2022</h1></div>
           <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
             {team22.map((team,index)=>(
+              <div key={index} className='flex justify-center'>
+                <Profile {...team} />
+              </div>
+            ))}
+          </div>
+
+          <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2021</h1></div>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+            {team21.map((team,index)=>(
+              <div key={index} className='flex justify-center'>
+                <Profile {...team} />
+              </div>
+            ))}
+          </div>
+
+          <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2020</h1></div>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+            {team20.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
               </div>

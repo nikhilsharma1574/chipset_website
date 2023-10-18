@@ -1,3 +1,52 @@
+export const team25= [
+  {
+    name:"Aaishwarya",
+    batch:"2025",
+    img:"/assets/members/batch22/aishwarya.png"
+    
+  },
+  {
+    name:"adarsh",
+    batch:"2025",
+    img:"/assets/members/batch22/adarsh.png"
+    
+  },
+  {
+    name:"Ananya",
+    batch:"2025",
+    img:"/assets/members/batch22/ananyaa.png"
+    
+  },
+  {
+    name:"Anmol",
+    batch:"2025",
+    img:"/assets/members/batch22/anmol.png"
+    
+  },
+  {
+    name:"Ashwin",
+    batch:"2025",
+    img:"/assets/members/batch22/ashwin.png"
+    
+  },
+  {
+    name:"Aviral",
+    batch:"2025",
+    img:"/assets/members/batch22/aviral.png"
+    
+  },
+  {
+    name:"Joydeep",
+    batch:"2025",
+    img:"/assets/members/batch22/joydeep.png"
+    
+  },
+  {
+    name:"Shubham",
+    batch:"2025",
+    img:"/assets/members/batch22/shubham.png"
+  },
+]
 export const team24 = [
     {
       name:"Atharv",
@@ -52,7 +101,7 @@ export const team24 = [
       batch:"2024",
       img:"/assets/members/batch24/shubham.png"
     },
-  ]
+]
 export  const team23 = [
     {
       name:"Darshil",
@@ -102,7 +151,7 @@ export  const team23 = [
       img:"/assets/members/batch23/sheetal.png"
       
     },
-  ]
+]
  export const team22= [
     {
       name:"Aaishwarya",
@@ -151,7 +200,105 @@ export  const team23 = [
       batch:"2022",
       img:"/assets/members/batch22/shubham.png"
     },
-  ]
+]
+ export const team21= [
+   {
+     name:"Aaishwarya",
+     batch:"2021",
+     img:"/assets/members/batch22/aishwarya.png"
+     
+   },
+   {
+     name:"adarsh",
+     batch:"2021",
+     img:"/assets/members/batch22/adarsh.png"
+     
+   },
+   {
+     name:"Ananya",
+     batch:"2021",
+     img:"/assets/members/batch22/ananyaa.png"
+     
+   },
+   {
+     name:"Anmol",
+     batch:"2021",
+     img:"/assets/members/batch22/anmol.png"
+     
+   },
+   {
+     name:"Ashwin",
+     batch:"2021",
+     img:"/assets/members/batch22/ashwin.png"
+     
+   },
+   {
+     name:"Aviral",
+     batch:"2021",
+     img:"/assets/members/batch22/aviral.png"
+     
+   },
+   {
+     name:"Joydeep",
+     batch:"2021",
+     img:"/assets/members/batch22/joydeep.png"
+     
+   },
+   {
+     name:"Shubham",
+     batch:"2021",
+     img:"/assets/members/batch22/shubham.png"
+   },
+]
+ export const team20= [
+  {
+    name:"Aaishwarya",
+    batch:"2020",
+    img:"/assets/members/batch22/aishwarya.png"
+    
+  },
+  {
+    name:"adarsh",
+    batch:"2020",
+    img:"/assets/members/batch22/adarsh.png"
+    
+  },
+  {
+    name:"Ananya",
+    batch:"2020",
+    img:"/assets/members/batch22/ananyaa.png"
+    
+  },
+  {
+    name:"Anmol",
+    batch:"2020",
+    img:"/assets/members/batch22/anmol.png"
+    
+  },
+  {
+    name:"Ashwin",
+    batch:"2020",
+    img:"/assets/members/batch22/ashwin.png"
+    
+  },
+  {
+    name:"Aviral",
+    batch:"2020",
+    img:"/assets/members/batch22/aviral.png"
+    
+  },
+  {
+    name:"Joydeep",
+    batch:"2020",
+    img:"/assets/members/batch22/joydeep.png"
+    
+  },
+  {
+    name:"Shubham",
+    batch:"2020",
+    img:"/assets/members/batch22/shubham.png"
+  },
+]
 export const events = [
    {
     title:"TechXchange",
@@ -217,7 +364,7 @@ export const events = [
       date:"12/01/2020",
       registrations:"120"
     }
-  ]
+]
 export const gallery=[
   {img:'/assets/gallery/1.jpg'},
   {img:'/assets/gallery/2.jpg'},
