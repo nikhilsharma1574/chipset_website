@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
+import { socialmedia } from '@/public/data'
+import Round_icons from './Round_icons'
 const Footer = () => {
   return (
     <div>
-        <footer className="bg-slate-200 rounded-lg shadow dark:bg-gray-900">
+        <footer className=" rounded-lg shadow dark:bg-gray-900">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <div className='flex items-center'>
@@ -23,7 +25,15 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div className='flex flex-1 px-4 justify-center items-center'>
+                {
+            socialmedia.map((socials,index)=>(
+                <div key={index} className='flex'>
+                    <Round_icons {...socials}/>
+                 </div>   
+            ))}
+                </div>
+                <hr className="my-6 sm:mx-auto border-black lg:my-8" />
                 <div className='flex flex-1 justify-center'>
                   <div>
                     <span className="block text-[9px] md:text-[12px] justify-center text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="" className="hover:underline">CHiPSET</a>. All Rights Reserved.</span>

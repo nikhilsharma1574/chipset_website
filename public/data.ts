@@ -322,7 +322,7 @@ export const events = [
       img:"/assets/images/15.png",
       link:"/link",
       date:"12/01/2020",
-      registrations:"120"
+      registrations:"900"
     },
     {
       title:"Codethon",
@@ -375,12 +375,12 @@ export const gallery=[
   {img:'/assets/gallery/7.jpg'}
 ]
 export const socialmedia=[
-  {title:"Linkdln" ,image: '/assets/socials/linkdln.png', link :'https://www.linkedin.com/company/chipsetsrmramapuram/mycompany/'},
-  {title:"Instagram" ,image: '/assets/socials/instagram.png', link :'https://www.instagram.com/chipsetsrmrmp/'},
-  {title:"Youtube" ,image: '/assets/socials/youtube.png', link :'https://www.youtube.com/@chipsetsrmrmp5406'},
-  {title:"Twitter" ,image: '/assets/socials/twitter.png', link :'https://twitter.com/chipsetrmp'},
-  {title:"Mail" ,image: '/assets/socials/mail.png', link :'https://www.google.com/gmail/about/'},
-  {title:"Discord" ,image: '/assets/socials/discord.png', link :'www.discord.com'},
+  {title:"Linkdln" ,footer_img:'/assets/socials/linkdln_footer.svg',image: '/assets/socials/linkdln.png', link :'https://www.linkedin.com/company/chipsetsrmramapuram/mycompany/'},
+  {title:"Instagram" ,footer_img:'/assets/socials/instagram_footer.svg',image: '/assets/socials/instagram.png', link :'https://www.instagram.com/chipsetsrmrmp/'},
+  {title:"Youtube" ,footer_img:'/assets/socials/youtube_footer.svg',image: '/assets/socials/youtube.png', link :'https://www.youtube.com/@chipsetsrmrmp5406'},
+  {title:"Twitter" ,footer_img:'/assets/socials/twitter_footer.svg',image: '/assets/socials/twitter.png', link :'https://twitter.com/chipsetrmp'},
+  {title:"Mail" ,footer_img:'/assets/socials/gmail_footer.svg',image: '/assets/socials/mail.png', link :'https://www.google.com/gmail/about/'},
+  {title:"Discord" ,footer_img:'/assets/socials/discord_footer.svg',image: '/assets/socials/discord.png', link :'www.discord.com'},
 ]
 export const aboutusdata=[
   {position:'flex-row',heading:'Our Motive',desc:'Our objective is to create awareness about latest and important technical advancements by collaborating with young innovative minds across disciplines. We are dedicated to making a change in the technological world by empowering the future leaders and entrepreneurs in their individual goals as well as improving everyone as a community.',image:"/assets/images/4.png"},

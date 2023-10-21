@@ -8,6 +8,7 @@ import PageLayout from '@/layouts/PageLayout'
 import { motion as m } from 'framer-motion'
 import Marqueescroll from '@/components/Marqueescroll'
 import Popup from '@/components/ui/Popup'
+// import Test2 from '@/components/Test2'
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (

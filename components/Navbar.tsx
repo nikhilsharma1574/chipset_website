@@ -53,7 +53,7 @@ const Navbar = () => {
                 <Image src={logo} height={100} width={100} alt='Logo' className='w-10 sm:w-20 md:w-16 p-1'/>
               <div>
                 <p className='font-bold text-2xl sm:text-4xl'>CHiPSET</p>
-                <p className='font-semibold uppercase sm:text-xs text-[10px] text-[#ff5234]'>A Technical Club</p>
+                <p className='font-semibold uppercase sm:text-xs text-[2px] text-[#ff5234]'>A Technical Community</p>
               </div>
               </div>
           </Link>

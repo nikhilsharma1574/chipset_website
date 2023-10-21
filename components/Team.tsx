@@ -21,9 +21,8 @@ export const Team = () => {
             </div>
           </div>
           <div className='container_for_team_members'>
-          
           <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2025</h1></div>
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8'>
             {team25.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
@@ -31,7 +30,7 @@ export const Team = () => {
             ))}
           </div>
           <div className='flex w-full justify-center'><h1 className='md:mt-12 uppercase font-bold md:text-2xl text-xl'>Batch 2024</h1></div>
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8'>
             {team24.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
@@ -39,7 +38,7 @@ export const Team = () => {
             ))}
           </div>
           <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2023</h1></div>
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8'>
             {team23.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
@@ -47,7 +46,7 @@ export const Team = () => {
             ))}
           </div>
           <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2022</h1></div>
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8'>
             {team22.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
@@ -56,7 +55,7 @@ export const Team = () => {
           </div>
 
           <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2021</h1></div>
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8'>
             {team21.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
@@ -65,7 +64,7 @@ export const Team = () => {
           </div>
 
           <div className='flex w-full justify-center'><h1 className='uppercase font-bold md:text-2xl text-xl'>Batch 2020</h1></div>
-          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7'>
+          <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8'>
             {team20.map((team,index)=>(
               <div key={index} className='flex justify-center'>
                 <Profile {...team} />
