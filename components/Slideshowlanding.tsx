@@ -1,22 +1,9 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import Typewriter from 'typewriter-effect';
 import Loading from '@/Loading';
-const slideImages = [
-  '/assets/images/4.png',
-  '/assets/images/17.png',
-  '/assets/images/2.png',
-  '/assets/images/18.png',
-  '/assets/images/14.png',
-  '/assets/images/6.png',
-  '/assets/images/10.png',
-  '/assets/images/19.png',
-  '/assets/images/15.png',
-  '/assets/images/20.png',
-  '/assets/images/7.png',
-  '/assets/images/16.png',
-];
+import { slideImages } from '@/public/data';
 
-const Test = () => {
+const Slideshow_landing = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -57,9 +44,9 @@ const Test = () => {
         </div>
       </div>
     </div>
-                </Suspense>
-                  </>
+    </Suspense>
+    </>
   );
 };
 
-export default Test;
+export default Slideshow_landing;

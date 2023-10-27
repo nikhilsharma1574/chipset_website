@@ -1,6 +1,6 @@
 import React from 'react'
 import { team24,team23,team22,team21,team20,team25 } from '@/public/data';
-import Profile from './Profile';
+import Profile from './Team_Profile';
 import Image from 'next/image';
 
 export const Team = () => {

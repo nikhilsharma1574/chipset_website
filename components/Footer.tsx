@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import Image from 'next/image'
 import { socialmedia } from '@/public/data'
-import Round_icons from './Round_icons'
+import Round_icons from './Round_icons_footer'
 const Footer = () => {
   return (
     <div>

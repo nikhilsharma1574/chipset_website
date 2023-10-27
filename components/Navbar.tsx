@@ -3,15 +3,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import logo from "../public/assets/logo/64x-black-logo.png"
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button"
 import { Menu } from 'lucide-react'
 import {
   Sheet,

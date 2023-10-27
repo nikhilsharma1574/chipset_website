@@ -1,5 +1,5 @@
 import React from 'react'
-import Card2 from './Card2'
+import Card2 from './Socialmedia_contactus_card'
 import { socialmedia } from '@/public/data'
 const Socialmedia = () => {
   return (

@@ -1,22 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import Card from './Card';
-import Profile from './Profile';
+import Card from './Event_card';
 import VideoPlayer from './Video_player';
-import { team24,team23,team22,events } from '@/public/data';
-import { Team } from './Team';
-interface Event{
-    title:string;
-    desc:string;
-    img:string;
-    link:string;
-    date:string;
-    registrations:string;
-};
-interface Team{
-  name:string;
-  batch:string;
-  img:string;
-}
+import {events } from '@/public/data';
+
 const Landing = () => {
   return (
     <>
@@ -52,11 +38,6 @@ const Landing = () => {
               ))}
           </div>
         </div>
-
-        
-
-
-
       </>
   );
 };
